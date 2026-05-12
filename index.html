@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Harsh Vardhan Singh — B.Tech CSE (AI/ML) student at Galgotias University. Python & Java developer passionate about AI/ML and building real-world solutions." />
+  <title>Harsh | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">H<span class="accent">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-sm">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting reveal">👋 Hello, I'm</p>
+      <h1 class="hero-name reveal delay-1">Harsh</h1>
+      <p class="hero-tagline reveal delay-2">
+        I'm a <span id="typewriter" class="accent"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-sub reveal delay-3">
+        I build innovative AI/ML solutions and web experiences that solve real-world problems.
+      </p>
+      <div class="hero-cta reveal delay-4">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-socials reveal delay-5">
+        <a href="https://github.com/HarshJadon1109/" id="hero-github" aria-label="GitHub" class="social-icon"
+          target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/harsh-vardhan-singh-6a154a387/" id="hero-linkedin" aria-label="LinkedIn"
+          class="social-icon" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" id="hero-twitter" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual reveal delay-2">
+      <div class="avatar-ring">
+        <div class="avatar-glow"></div>
+        <img src="photo.jpeg" alt="Harsh Vardhan Singh" class="avatar-placeholder" id="avatar-img" />
+      </div>
+      <div class="floating-badge badge-1"><i class="fas fa-brain"></i> AI/ML</div>
+      <div class="floating-badge badge-2"><i class="fas fa-robot"></i> ML Engineer</div>
+      <div class="floating-badge badge-3"><i class="fas fa-graduation-cap"></i> B.Tech CSE</div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll down</span>
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Hi! I'm <strong>Harsh Vardhan Singh</strong>, a highly motivated B.Tech Computer Science student
+            specialising in <strong>Artificial Intelligence and Machine Learning</strong> at Galgotias University,
+            Greater Noida.</p>
+          <p>Proficient in Python and Java with strong problem-solving skills, I'm passionate about leveraging
+            cutting-edge technology to develop innovative and impactful real-world solutions.</p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num" data-target="2">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Certificates</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="2">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+          </div>
+          <a href="resume.pdf" id="resume-link" class="btn btn-primary" download="Harsh_Resume.pdf">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="about-image-wrap reveal delay-2">
+          <div class="about-img-card">
+            <div class="code-block-deco">
+              <div class="code-line"><span class="c-purple">const</span> <span class="c-cyan">harsh</span> = {</div>
+              <div class="code-line pl"> <span class="c-green">degree</span>: <span class="c-orange">"B.Tech CSE
+                  (AIML)"</span>,</div>
+              <div class="code-line pl"> <span class="c-green">university</span>: <span
+                  class="c-orange">"Galgotias"</span>,</div>
+              <div class="code-line pl"> <span class="c-green">focus</span>: <span class="c-orange">"AI &amp;
+                  ML"</span>,</div>
+              <div class="code-line pl"> <span class="c-green">available</span>: <span class="c-purple">true</span>,
+              </div>
+              <div class="code-line">};</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <h2 class="section-title reveal">My <span class="accent">Skills</span></h2>
+      <p class="section-sub reveal">Technologies I work with to bring ideas to life</p>
+      <div class="skills-categories">
+        <div class="skill-category reveal">
+          <h3 class="cat-title"><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+            <span class="skill-tag"><i class="fab fa-html5"></i> HTML</span>
+            <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+            <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal delay-1">
+          <h3 class="cat-title"><i class="fas fa-brain"></i> AI / ML</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Content-Based Filtering</span>
+            <span class="skill-tag">Recommendation Systems</span>
+            <span class="skill-tag">Data Analysis</span>
+          </div>
+        </div>
+        <div class="skill-category reveal delay-2">
+          <h3 class="cat-title"><i class="fas fa-certificate"></i> Certifications</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Web Development</span>
+            <span class="skill-tag">SQL — Oracle Academy</span>
+            <span class="skill-tag">Java — GUVI</span>
+            <span class="skill-tag">Python — GUVI</span>
+            <span class="skill-tag">Advanced Python — GUVI</span>
+            <span class="skill-tag">Python Expert — GUVI</span>
+          </div>
+        </div>
+        <div class="skill-category reveal delay-3">
+          <h3 class="cat-title"><i class="fas fa-users"></i> Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Decision Making</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Time Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+      <p class="section-sub reveal">A selection of work I'm proud of</p>
+      <div class="projects-grid">
+        <article class="project-card reveal" id="project-1">
+          <div class="project-top">
+            <span class="project-icon"><i class="fas fa-film"></i></span>
+            <div class="project-links">
+              <a href="https://github.com/HarshJadon1109/" aria-label="GitHub" class="project-link" target="_blank"
+                rel="noopener"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Movie Recommendation System</h3>
+          <p class="project-desc">A machine learning-based movie recommendation system that suggests personalised movies
+            based on user preferences using content-based filtering to analyse user behaviour and movie features.</p>
+          <div class="project-tags"><span>Python</span><span>Machine Learning</span><span>Content-Based Filtering</span>
+          </div>
+        </article>
+        <article class="project-card reveal delay-1" id="project-2">
+          <div class="project-top">
+            <span class="project-icon"><i class="fas fa-briefcase"></i></span>
+            <div class="project-links">
+              <a href="https://github.com/HarshJadon1109/" aria-label="GitHub" class="project-link" target="_blank"
+                rel="noopener"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Internship Recommendation System</h3>
+          <p class="project-desc">An AI-based system that analyses user skills, interests, and academic data to suggest
+            relevant internship opportunities using machine learning algorithms for personalised and accurate
+            recommendations.</p>
+          <div class="project-tags"><span>Python</span><span>AI/ML</span><span>Recommendation System</span></div>
+        </article>
+        <article class="project-card reveal delay-2" id="project-3">
+          <div class="project-top">
+            <span class="project-icon"><i class="fas fa-globe"></i></span>
+            <div class="project-links">
+              <a href="https://github.com/HarshJadon1109/" aria-label="GitHub" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+              <a href="http://localhost:8080" aria-label="Live Demo" class="project-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-desc">A stunning dark-themed personal portfolio built from scratch with glassmorphism design, animated particle canvas, typewriter effect, scroll reveal animations, and a fully responsive layout.</p>
+          <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Glassmorphism</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub reveal">Have a project in mind or just want to say hi? I'd love to hear from you!</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <i class="fas fa-envelope contact-icon"></i>
+            <div>
+              <h4>Email</h4><a href="mailto:jadonharsh3011@gmail.com" id="contact-email">jadonharsh3011@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <div>
+              <h4>Location</h4><span>Greater Noida, Uttar Pradesh, India 🇮🇳</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-circle contact-icon available"></i>
+            <div>
+              <h4>Status</h4><span class="available-text">Available for opportunities</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/HarshJadon1109/" id="footer-github" class="social-btn" aria-label="GitHub"
+              target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harsh-vardhan-singh-6a154a387/" id="footer-linkedin" class="social-btn"
+              aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal delay-2" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="cf-name">Your Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Your Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="Project Inquiry" />
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-success" id="form-success" style="display:none">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; Built by <span class="accent">Harsh</span> · <span id="footer-year"></span></p>
+    <p class="footer-sub">Made with <i class="fas fa-heart" style="color:#f43f5e"></i> and lots of ☕</p>
+  </footer>
+
+  <button class="back-top" id="back-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
