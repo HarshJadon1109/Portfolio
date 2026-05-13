@@ -25,7 +25,8 @@
     this.vx = (Math.random() - 0.5) * 0.3;
     this.vy = (Math.random() - 0.5) * 0.3;
     this.alpha = Math.random() * 0.5 + 0.1;
-    this.color = Math.random() > 0.5 ? '124,58,237' : '6,182,212';
+    const cols = window.__particleColors || ['124,58,237', '6,182,212'];
+    this.color = cols[Math.random() > 0.5 ? 0 : 1];
   };
   Particle.prototype.update = function () {
     this.x += this.vx;
@@ -213,3 +214,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+/* ═══════════════════════════════════════════
+   10. DARK / LIGHT MODE TOGGLE
+═══════════════════════════════════════════ */
+(function initThemeToggle() {
+  const btn  = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+
+  // Particle colors per theme
+  const DARK_COLORS  = ['124,58,237', '6,182,212'];
+  const LIGHT_COLORS = ['109,40,217', '8,145,178'];
+
+  // Apply theme and update particle colours
+  function applyTheme(theme) {
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      window.__particleColors = LIGHT_COLORS;
+    } else {
+      html.removeAttribute('data-theme');
+      window.__particleColors = DARK_COLORS;
+    }
+    localStorage.setItem('portfolio-theme', theme);
+  }
+
+  // Load saved preference (default: dark)
+  const saved = localStorage.getItem('portfolio-theme') || 'dark';
+  applyTheme(saved);
+
+  btn.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    applyTheme(current === 'light' ? 'dark' : 'light');
+  });
+})();
